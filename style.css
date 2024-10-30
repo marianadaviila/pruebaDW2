@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 .hero-background {
-    background-image: url("img/bg-hero.png"); /* Ensure path is correct */
+    background-image: url("https://github.com/marianadaviila/pruebaDW2/blob/main/img/bg-hero.png"); /* Ensure path is correct */
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
