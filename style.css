@@ -195,13 +195,89 @@ body {
     gap: 5px;
 }
 
-
-footer {
-    background-color: var(--fondo-footer);
+.services {
+    padding: 60px 20px;
     text-align: center;
-    color: white;
-    padding: 10px;
+}
+
+.services-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-heading {
+    font-size: 2.5rem;
+    color: var(--color-titulos);
+    font-family: 'Nanum Pen Script', sans-serif;
+    margin-bottom: 20px;
+}
+
+.services-text {
+    font-size: 1.2rem;
+    color: var(--color-general);
+    font-family: 'Nanum Pen Script', sans-serif;
+    margin-bottom: 15px;
+}
+
+.customer-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-titulos);
+    margin-bottom: 20px;
+}
+
+.location {
+    font-weight: normal;
+    color: #6c757d; 
+}
+
+.services-separator {
+    width: 50%; 
+    height: 1px;
+    background-color: #ccc; 
+    margin: 20px auto; 
+}
+
+.service-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+.service-icon {
+    width: 60px;
+    height: auto;
+}
+
+.footer-section {
+    background: linear-gradient(to right, #f49f28, #e38d00);
+    color: #333; 
+    text-align: center;
+    padding: 20px 0;
     font-size: 0.9rem;
+    font-family: 'Nanum Pen Script', sans-serif;
+}
+
+.footer-image img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+    color: #333;
+}
+
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+}
+
+.footer-section a:hover {
+    color: #555;
 }
 
 
@@ -285,6 +361,25 @@ footer {
 
     .section-heading {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-background {
+        min-height: 30vh;
+    }
+
+    .hero-content {
+        padding: 100px 0;
+        margin-top: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
     }
 }
 
@@ -376,5 +471,73 @@ footer {
 
     .coupon-text {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px; 
+    }
+
+    .service-icon {
+        width: 50px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .services-text, .faq-answer, .offer-item p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-container {
+        padding: 0 10px;
+    }
+
+    .faq-heading {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .offers, .faq, .services {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-image img {
+        width: 200px; 
+    }
+
+    .footer-section {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-image img {
+        width: 150px; 
+    }
+
+    .footer-section {
+        font-size: 0.75rem;
+        padding: 15px 0; 
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-image img {
+        width: 120px; 
+    }
+
+    .footer-section {
+        font-size: 0.7rem; 
+        padding: 10px 0; 
     }
 }
