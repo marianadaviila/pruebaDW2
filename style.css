@@ -140,11 +140,11 @@ footer {
 
 @media (max-width: 768px) { 
     .hero-background {
-        min-height: 60vh;
+        min-height: 40vh;
     }
 
     .hero-content {
-        padding: 40px 0;
+        padding: 210px 0;
         margin-top: 0px;
     }
 
