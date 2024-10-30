@@ -83,7 +83,6 @@ body {
     color: var(--color-titulos);
 }
 
-/* Offers Section */
 .offers {
     font-family: 'Nanum Pen Script', cursive;
     color: var(--color-general);
@@ -123,8 +122,77 @@ body {
     color: var(--color-general);
 }
 
+
 .faq {
     background-color: var(--fondo-gris);
+    padding: 60px 0;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-heading {
+    font-size: 3rem;
+    color: var(--color-titulos);
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+
+.faq-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.faq-image {
+    width: 300px;
+    max-width: 100%;
+}
+
+.faq-text {
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: var(--color-general);
+    max-width: 500px;
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    color: var(--color-titulos);
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 1.2rem;
+    color: var(--color-general);
+    margin-bottom: 20px;
+}
+
+.coupon-text {
+    font-size: 1.2rem;
+    color: var(--color-titulos);
+}
+
+.coupon-text .highlight {
+    color: var(--hero-title-color);
+    text-decoration: underline dotted;
+}
+
+.btn-shop {
+    background-color: var(--fondo-footer);
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 
@@ -267,5 +335,46 @@ footer {
     .offer-details .offer-item {
         padding: 10px;
         margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .faq-heading {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .faq-image {
+        width: 200px; 
+        margin-bottom: 20px;
+    }
+
+    .faq-text {
+        max-width: 90%; 
+    }
+
+    .faq-question {
+        font-size: 1.2rem;
+    }
+
+    .faq-answer {
+        font-size: 1.1rem;
+    }
+
+    .btn-shop {
+        font-size: 1.1rem;
+        padding: 8px 16px;
+    }
+
+    .coupon-text {
+        font-size: 1.1rem;
     }
 }
